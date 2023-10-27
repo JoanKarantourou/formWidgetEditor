@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="card outCard">
+    <div class="card-body">
+      <h4 class="card-title text-center">Form Preview:</h4>
+      <div class="card inCard">
+        <div class="card-body">
+          <div class="text-center">
+            <h3 class="card-title">{{ mainTitle }}</h3>
+            <p class="card-text">{{ subtitle }}</p>
+          </div>
+          <div class="form-group m-1">
+            <label
+              for="firstNameForm"
+              class="form-label"
+              [class.required]="firstNmIsRequired"
+              >First Name</label
+            >
+            <input
+              id="firstNameForm"
+              type="text"
+              class="form-control"
+              [required]="firstNmIsRequired"
+            />
+            <label
+              for="lastNameForm"
+              class="form-label"
+              [class.required]="lastNmIsRequired"
+              >Last Name</label
+            >
+            <input
+              id="lastNameForm"
+              type="text"
+              class="form-control"
+              [required]="lastNmIsRequired"
+            />
+            <label for="emailForm" class="form-label required">Email</label>
+            <input id="emailForm" type="text" class="form-control" required />
+          </div>
+          <div class="text-center mt-3">
+            <button
+              class="btn btn-secondary"
+              [style.background]="selectedColor"
+            >
+              {{ button }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

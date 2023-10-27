@@ -1,0 +1,108 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <!--Main Title-->
+      <div class="card-title">Main Title</div>
+      <div class="row">
+        <label for="mainTitleText" class="form-label">Main Title Text:</label>
+        <div class="col mb-3">
+          <input
+            id="mainTitleText"
+            type="text"
+            class="form-control"
+            [(ngModel)]="mainTitleInput"
+            (input)="updateMainTitle()"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <label class="form-label">Typography:</label>
+        <!--toDo: insert editor here-->
+      </div>
+      <hr />
+      <!--Subtitle-->
+      <div class="card-title">Subtitle</div>
+      <div class="row">
+        <label for="subtitleText" class="form-label">Subtitle Text:</label>
+        <div class="col mb-3">
+          <input
+            type="text"
+            id="subtitleText"
+            class="form-control"
+            [(ngModel)]="subtitleInput"
+            (input)="updateSubtitle()"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <label class="form-label">Typography:</label>
+        <!--toDo: insert editor here-->
+      </div>
+      <hr />
+      <!--Input Fields-->
+      <div class="card-title">Input Fields</div>
+      <div class="row">
+        <label class="form-label">First Name:</label>
+        <div class="form-check form-switch mx-2">
+          <input
+            class="form-check-input mb-3"
+            type="checkbox"
+            id="firstNameRChck"
+            [(ngModel)]="firstNmIsRequired"
+            (change)="updateFirstNmIsRequired()"
+          />
+          <label class="form-check-label" for="firstNameRChck">Required</label>
+        </div>
+      </div>
+      <div class="row">
+        <label class="form-label">Last Name:</label>
+        <div class="form-check form-switch mx-2">
+          <input
+            class="form-check-input mb-3"
+            type="checkbox"
+            id="lastNameRChck"
+            [(ngModel)]="lastNmIsRequired"
+            (change)="updateLastNmIsRequired()"
+          />
+          <label class="form-check-label" for="lastNameRChck">Required</label>
+        </div>
+      </div>
+      <hr />
+      <!--Button-->
+      <div class="card-title">Button</div>
+      <div class="row">
+        <label for="buttonText" class="form-label">Button Text:</label>
+        <div class="col mb-3">
+          <input
+            type="text"
+            id="buttonText"
+            class="form-control"
+            [(ngModel)]="buttonInput"
+            (input)="updateButton()"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <label class="form-label">Button Color:</label>
+        <div class="col d-flex">
+          <div class="col-2 me-1">
+            <input
+              class="form-control colorInput"
+              type="color"
+              [(ngModel)]="selectedColor"
+              (input)="hexColor()"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              class="form-control"
+              type="text"
+              [(ngModel)]="selectedColor"
+              (input)="hexColor()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

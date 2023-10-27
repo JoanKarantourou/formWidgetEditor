@@ -1,0 +1,15 @@
+.colorInput {
+  height: 100%;
+  padding: 5px;
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.card {
+  overflow: hidden;
+  /* overflow-x: scroll; */
+}
+
+input {
+  font-size: 14px;
+  font-weight: 300;
+}
